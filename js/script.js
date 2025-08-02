@@ -29,4 +29,14 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
   
-  
+ document.getElementById('toggleGallery').addEventListener('click', function () {
+  const gallery = document.getElementById('gallery');
+  gallery.classList.toggle('hidden');
+
+  // Cambiar el texto del botón
+  if (gallery.classList.contains('hidden')) {
+    this.textContent = 'Ver galería';
+  } else {
+    this.textContent = 'Ocultar galería';
+  }
+});
