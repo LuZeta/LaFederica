@@ -28,7 +28,8 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   });
-  
+
+  console.log("script cargado");
  document.getElementById('toggleGallery').addEventListener('click', function () {
   const gallery = document.getElementById('gallery');
   gallery.classList.toggle('hidden');
