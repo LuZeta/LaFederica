@@ -338,15 +338,45 @@ body {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
+/*contacto*/
+.formulario.mostrar {
+  display: block !important;
+}
+
+
 /* FOOTER */
 footer {
   padding: 40px 20px;
   text-align: center;
   background-color: #333;
   color: #eee;
+
 }
 
-footer a {
+.footer-links {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-links a {
   color: #df5e55;
   text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links i {
+  margin-right: 5px;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.letritasBlancas {
+  color: #eee;
+  margin-bottom: 5px;
 }

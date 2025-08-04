@@ -41,3 +41,20 @@ document.addEventListener('DOMContentLoaded', function () {
     this.textContent = 'Ocultar galería';
   }
 });
+
+//botń formulario
+document.addEventListener("DOMContentLoaded", function () {
+  const boton = document.getElementById("boton-formulario");
+  const form = document.getElementById("form-google");
+
+  boton.addEventListener("click", function () {
+    form.classList.toggle("mostrar");
+
+    if (form.classList.contains("mostrar")) {
+      boton.textContent = "Cerrar formulario";
+    } else {
+      boton.textContent = "Quiero saber más";
+    }
+  });
+});
+
